@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    
+<header>
+
+    <nav>
+        <a href="Registro.html">Registro</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Checkin-checkout.html">Check-in y Check-out</a>
+        <a href="Panel.html">Panel principal</a>
+        <a href="Facturacion.html">Facturación</a>
+    </nav>
+
+</header>
+
+    <header class="encabezado">
+        <h1>Hotel Vesta</h1>
+        <p>Sistema de gestión hotelera</p>
+    </header>
+
+    <main class="contenido">
+
+        <section class="bienvenida">
+            <h2>Gestión de facturación</h2>
+            <p>Registra y consulta las facturas generadas por los servicios del hotel.</p>
+        </section>
+
+        <section class="formulario">
+            <h3>Generar nueva factura</h3>
+
+            <form>
+                <div class="grupo-campo">
+                    <label for="numero-factura">Número de factura:</label>
+                    <input type="text" id="numero-factura"
+                           name="numero-factura" placeholder="Ej. FAC-001" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="documento">Documento del huésped:</label>
+                    <input type="text" id="documento" name="documento"
+                           placeholder="Número de documento" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre del huésped:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Nombre completo" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="habitacion">Número de habitación:</label>
+                    <input type="number" id="habitacion" name="habitacion"
+                           placeholder="Ej. 101" min="1" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="reserva">Número de reserva:</label>
+                    <input type="text" id="reserva" name="reserva"
+                           placeholder="Código de reserva" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha">Fecha de emisión:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="subtotal">Subtotal (COP):</label>
+                    <input type="number" id="subtotal" name="subtotal"
+                           placeholder="0" min="0" step="0.01" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="impuestos">Impuestos (COP):</label>
+                    <input type="number" id="impuestos" name="impuestos"
+                           placeholder="0" min="0" step="0.01" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="total">Total (COP):</label>
+                    <input type="number" id="total" name="total"
+                           placeholder="0" min="0" step="0.01" required>
+                </div>
+
+                <button type="submit">Generar factura</button>
+            </form>
+        </section>
+
+        <section class="listado">
+            <h3>Facturas registradas</h3>
+            <p>Consulta las facturas emitidas por el hotel.</p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Huésped</th>
+                            <th>Habitación</th>
+                            <th>Fecha</th>
+                            <th>Total (COP)</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>FAC-001</td>
+                            <td>María González</td>
+                            <td>101</td>
+                            <td>19/10/2026</td>
+                            <td>$250.000</td>
+                            <td>Pendiente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <a class="volver" href="panel.html">Volver al panel principal</a>
+
+    </main>
+
+    <footer class="pie">
+        <p>Hotel Vesta | Sistema de gestión hotelera</p>
+    </footer>
+
+</body>
+</html>

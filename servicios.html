@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+<body>
+
+<header>
+
+    <nav>
+        <a href="Registro.html">Registro</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Checkin-checkout.html">Check-in y Check-out</a>
+        <a href="Panel.html">Panel principal</a>
+        <a href="Facturacion.html">Facturación</a>
+    </nav>
+    
+</header>
+
+
+
+
+    <main>
+       
+        <h1> Servicios del hotel</h1>
+<section>
+            <h2>Servicios disponibles</h2>
+
+           <div class="servicios">
+
+            <article class="card servicio">
+                <h3> Lavandería</h3>
+                <p class="precio">$50.000/por lavada</p>
+                <p>Servicio de lavandería para ropa y prendas personales. Incluye lavado, secado y planchado.</p>
+
+            </article> 
+           
+            <article class="card servicio">
+          
+                <h3> Spa</h3>
+                <p class="precio">$100.000/hora</p>
+                <p>Servicio de spa para relajación y bienestar. Incluye masajes, baños termales y tratamientos estéticos.</p>
+
+            </article>
+
+            <article class="card servicio">
+          
+                <h3> Desayuno</h3>
+                <p class="precio">$20.000</p>
+                <p>Servicio de desayuno incluido en la tarifa de la habitación. Incluye opciones de desayuno continental y americano.</p>
+           
+            </article>
+        </div>   
+
+        </section>
+
+        <section>
+
+            <h2>Contratar un servicio</h2>
+
+            <form>
+
+                <label for="servicio">Selecciona un servicio</label>
+                <select name="servicio" id="servicio">
+                    <option value="lavanderia">Lavandería</option>
+                    <option value="spa">Spa</option>
+                    <option value="desayuno">Desayuno</option>
+                    </select>
+
+                <label for="cantidad">Cantidad</label>
+
+                    <input type="number" name="cantidad" id="cantidad" min="1" value="1">
+
+                    <input type="submit" value="Contratar">
+            
+            </form>
+        </section>
+    </main>
+</body>
+
+<footer>Hotel Vesta | Sistema de gestión hotelera</footer>
+
+</html>

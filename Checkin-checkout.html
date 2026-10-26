@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-in y Check-out | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+<header>
+
+    <nav>
+        <a href="Registro.html">Registro</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Checkin-checkout.html">Check-in y Check-out</a>
+        <a href="Panel.html">Panel principal</a>
+        <a href="Facturacion.html">Facturación</a>
+
+        
+    </nav>
+
+</header>
+    <header class="encabezado">
+        <h1>Hotel Vesta</h1>
+        <p>Sistema de gestión hotelera</p>
+    </header>
+
+    <main class="contenido">
+
+        <section class="bienvenida">
+            <h2>Control de entradas y salidas</h2>
+            <p>Administra la llegada y salida de los huéspedes del hotel.</p>
+        </section>
+
+        <section class="formulario">
+            <h3>Check-in | Registro de entrada</h3>
+
+            <form>
+                <div class="grupo-campo">
+                    <label for="reserva-entrada">Número de reserva:</label>
+                    <input type="text" id="reserva-entrada"
+                           name="reserva-entrada" placeholder="Ej. RES-001" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="documento-entrada">Documento del huésped:</label>
+                    <input type="text" id="documento-entrada"
+                           name="documento-entrada" placeholder="Número de documento" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nombre-entrada">Nombre completo:</label>
+                    <input type="text" id="nombre-entrada"
+                           name="nombre-entrada" placeholder="Nombre del huésped" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="habitacion-entrada">Número de habitación:</label>
+                    <input type="number" id="habitacion-entrada"
+                           name="habitacion-entrada" placeholder="Ej. 101" min="1" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha-entrada">Fecha de entrada:</label>
+                    <input type="date" id="fecha-entrada"
+                           name="fecha-entrada" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="hora-entrada">Hora de entrada:</label>
+                    <input type="time" id="hora-entrada"
+                           name="hora-entrada" required>
+                </div>
+
+                <button type="submit">Confirmar check-in</button>
+            </form>
+        </section>
+
+        <section class="formulario">
+            <h3>Check-out | Registro de salida</h3>
+
+            <form>
+                <div class="grupo-campo">
+                    <label for="reserva-salida">Número de reserva:</label>
+                    <input type="text" id="reserva-salida"
+                           name="reserva-salida" placeholder="Ej. RES-001" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="documento-salida">Documento del huésped:</label>
+                    <input type="text" id="documento-salida"
+                           name="documento-salida" placeholder="Número de documento" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="habitacion-salida">Número de habitación:</label>
+                    <input type="number" id="habitacion-salida"
+                           name="habitacion-salida" placeholder="Ej. 101" min="1" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha-salida">Fecha de salida:</label>
+                    <input type="date" id="fecha-salida"
+                           name="fecha-salida" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="hora-salida">Hora de salida:</label>
+                    <input type="time" id="hora-salida"
+                           name="hora-salida" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="estado-pago">Estado del pago:</label>
+                    <select id="estado-pago" name="estado-pago" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="pagado">Pagado</option>
+                    </select>
+                </div>
+
+                <button type="submit">Confirmar check-out</button>
+            </form>
+        </section>
+
+       
+
+    </main>
+
+    <footer class="pie">
+        <p>Hotel Vesta | Sistema de gestión hotelera</p>
+    </footer>
+
+</body>
+</html>

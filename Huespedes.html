@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huéspedes | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+
+    <nav>
+        <a href="Registro.html">Registro</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Checkin-checkout.html">Check-in y Check-out</a>
+        <a href="Panel.html">Panel principal</a>
+        <a href="Facturacion.html">Facturación</a>
+    </nav>
+    
+</header>
+
+    <header class="encabezado">
+        <h1>Hotel Vesta</h1>
+        <p>Sistema de gestión hotelera</p>
+    </header>
+
+    <main class="contenido">
+
+        <section class="bienvenida">
+            <h2>Gestión de huéspedes</h2>
+            <p>Registra y consulta la información de los huéspedes del hotel.</p>
+        </section>
+
+        <section class="formulario">
+            <h3>Registrar nuevo huésped</h3>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Ingresa el nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"
+                       placeholder="Ingresa el apellido" required>
+
+                <label for="documento">Documento de identidad:</label>
+                <input type="text" id="documento" name="documento"
+                       placeholder="Número de documento" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="Número de teléfono">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                       placeholder="ejemplo@correo.com">
+
+                <button type="submit">Registrar huésped</button>
+            </form>
+        </section>
+
+        
+<section class="listado">
+    <h3>Huéspedes registrados</h3>
+    <p>Consulta la información de los huéspedes del hotel.</p>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Documento</th>
+                    <th>Teléfono</th>
+                    <th>Correo electrónico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>María</td>
+                    <td>González</td>
+                    <td>Ejemplo 123</td>
+                    <td>300 000 0000</td>
+                    <td>maria@ejemplo.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+        <a class="volver" href="panel.html">Volver al panel principal</a>
+
+    </main>
+
+    <footer class="pie">
+        <p>Hotel Vesta | Sistema de gestión hotelera</p>
+    </footer>
+
+</body>
+</html>

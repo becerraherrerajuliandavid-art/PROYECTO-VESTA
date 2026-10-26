@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+
+  <header>
+
+    <nav>
+        <a href="Registro.html">Registro</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Checkin-checkout.html">Check-in y Check-out</a>
+        <a href="Panel.html">Panel principal</a>
+        <a href="Facturacion.html">Facturación</a>
+    </nav>
+    
+</header>
+
+
+
+<body>
+    <main class="form-registro">
+         <section class="card form-registro">
+        <h1>Ingresa tus datos</h1>
+
+        <div class="campo">
+            <label for="name">Nombres:</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+        </div>
+
+        <div class="campo">
+            <label for="lastname">Apellidos:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Apellidos">
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico">
+        </div>
+
+        <div class="campo">
+            <label for="document">Documento de identidad:</label>
+            <input type="text" name="document" id="document" placeholder="Documento de identidad">
+        </div>
+
+        <div class="campo">
+            <label for="position">Cargo:</label>
+            <input type="text" name="position" id="position" placeholder="Cargo">
+        </div>
+
+        <button id="btnRegistrar" onclick="registrarUsuario()">Registrar</button>
+    </section>
+
+</main>
+
+    <script>
+        
+        function registrarUsuario() {
+            const datos = {
+                name: document.getElementById("name").value,
+                lastname: document.getElementById("lastname").value,
+                email: document.getElementById("email").value,
+                document: document.getElementById("document").value,
+                position: document.getElementById("position").value,
+            };
+
+            console.log("Datos del formulario:", datos);
+            alert("Prueba: los datos se leyeron correctamente (mira la consola)");
+        }
+    </script>
+
+</body>
+
+<footer>Hotel Vesta | Sistema de gestión hotelera</footer>
+
+</html>
