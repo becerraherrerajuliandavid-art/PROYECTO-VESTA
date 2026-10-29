@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+    <body>
+
+   
+        <header>
+
+            <nav>
+                <a href="Panel.html">Panel principal</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <h1>Consultas de habitaciones</h1>
+
+ <section>
+
+                <h2>tipos de habitaciones</h2>
+
+                <article>
+                    <h3>Habitación #10</h3>
+                    <p>Habitación sencilla con vistas a la piscina, cama semidoble y baño pequeño.</p>
+                    <p>Precio: $100.000 COP por noche</p>
+                </article>
+
+                <article>
+                    <h3>Habitación #15</h3>
+                    <p>Suite con tres baños, cama king size, vista al jardín y piscina.(Servicio de habitación a cualquier hora).</p>
+                    <p>Precio: $300.000 COP por noche</p>
+
+                </article>
+                
+ </section>
+
+
+
+
+<section>
+
+
+
+
+    <h2>Envíanos tu consulta</h2>
+
+    <form>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo electrónico">
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
+
+        <label for="consulta">Tipo de consulta:</label>
+        <select id="consulta" name="consulta" required>
+            <option value="">Selecciona una opción</option>
+            <option value="servicios">Servicios</option>
+            <option value="reserva">Reserva</option>
+            <option value="informacion">Información</option>
+        </select>
+
+        <label for="fecha">Fecha de entrada:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="huespedes">Número de huéspedes:</label>
+        <input type="number" id="huespedes" name="huespedes" min="1" value="1">
+
+        <button type="submit">Enviar consulta</button>
+
+    </form>
+
+
+
+
+</section>
+
+
+
+<section>
+
+    <h2>Tabla de datos</h2>
+
+    <table>
+
+        
+
+        <thead>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Tipo de consulta</th>
+                <th>Fecha de entrada</th>
+                <th>Número de huéspedes</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Juan Pérez</td>
+                <td>juan.perez@example.com</td>
+                <td>3001234567</td>
+                <td>Reserva</td>
+                <td>2023-10-15</td>
+                <td>2</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+
+</section>
+           
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Hotel Vesta. Todos los derechos reservados.</p>
+           <a href="https://workspace.google.com/intl/es-419/gmail/" target="_blank" rel="noopener noreferrer">Ir a Gmail</a>
+        </footer>
+
+        </body>
+        </html>
+    
