@@ -100,6 +100,11 @@ textarea {
 	color: var(--vesta-ink);
 }
 
+select option {
+    padding: 3px;
+    line-height: 1.2;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -372,4 +377,48 @@ body {
     .tarjeta {
         padding: 20px;
     }
+}
+
+form{
+	margin: auto;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 525px;
+	margin-top: 120px;
+	border-radius: 10px;
+	color: #0000;
+	box-shadow: 0 0 45px #0006;
+	
+}
+
+
+h2{
+	font-size: 30px;
+}
+
+
+
+
+.form-registro form {
+	margin: 0;
+	padding: 0;
+	max-width: none;
+	background: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	color: inherit;
+	text-align: left;
+}
+
+
+.form-registro .campo input {
+	margin-bottom: 0;
+}
+
+
+.form-registro button[type="submit"] {
+	margin-top: 0.5rem;
 }

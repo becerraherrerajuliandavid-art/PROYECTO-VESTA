@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="vesta es un sistema de gestión hotelera creado para facilitar los procesos internos dentro de un hotel.">
+    <meta name="Keywords" content="Hotel,reservas,disponibilidad,habitaciones,pago,piso,estadia,habitación,huésped,huéspedes,gestion,servicios">
     <title>Registro de usuarios</title>
     <link rel="stylesheet" href="estilos.css">
+     <link rel="icon" href="Logo.png " type="img/png">
 </head>
 
 
@@ -19,6 +22,8 @@
         <a href="Checkin-checkout.html">Check-in y Check-out</a>
         <a href="Panel.html">Panel principal</a>
         <a href="Facturacion.html">Facturación</a>
+        <a href="consultas.html">Consultas</a>
+
     </nav>
     
 </header>
@@ -27,54 +32,47 @@
 
 <body>
     <main class="form-registro">
-         <section class="card form-registro">
-        <h1>Ingresa tus datos</h1>
+        <section class="card form-registro">
+            <h1>Regístrate</h1>
 
-        <div class="campo">
-            <label for="name">Nombres:</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
-        </div>
+            <form id="formRegistro">
+                <div class="campo">
+                    <label for="name">Nombres:</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                </div>
 
-        <div class="campo">
-            <label for="lastname">Apellidos:</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Apellidos">
-        </div>
+                <div class="campo">
+                    <label for="lastname">Apellidos:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+                </div>
 
-        <div class="campo">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" id="email" placeholder="Correo electrónico">
-        </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                </div>
 
-        <div class="campo">
-            <label for="document">Documento de identidad:</label>
-            <input type="text" name="document" id="document" placeholder="Documento de identidad">
-        </div>
+                <div class="campo">
+                    <label for="document">Documento de identidad:</label>
+                    <input type="text" name="document" id="document" placeholder="Documento de identidad" required>
+                </div>
 
-        <div class="campo">
-            <label for="position">Cargo:</label>
-            <input type="text" name="position" id="position" placeholder="Cargo">
-        </div>
+                <div class="campo">
+                    <label for="position">Cargo:</label>
+                    <input type="text" name="position" id="position" placeholder="Cargo" required>
+                </div>
 
-        <button id="btnRegistrar" onclick="registrarUsuario()">Registrar</button>
-    </section>
-
-</main>
+                <button type="submit" id="btnRegistrar">Registrar</button>
+            </form>
+        </section>
+    </main>
 
     <script>
-        
-        function registrarUsuario() {
-            const datos = {
-                name: document.getElementById("name").value,
-                lastname: document.getElementById("lastname").value,
-                email: document.getElementById("email").value,
-                document: document.getElementById("document").value,
-                position: document.getElementById("position").value,
-            };
-
-            console.log("Datos del formulario:", datos);
-            alert("Prueba: los datos se leyeron correctamente (mira la consola)");
-        }
+        document.getElementById("formRegistro").addEventListener("submit", function (e) {
+            e.preventDefault();   // evita que la página se recargue
+            registrarUsuario();   // solo se ejecuta si todos los required están completos
+        });
     </script>
+</body>
 
 </body>
 
