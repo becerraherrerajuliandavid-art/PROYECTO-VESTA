@@ -379,7 +379,7 @@ body {
     }
 }
 
-form{
+.inicio_sesion{
 	margin: auto;
 	background-color: white;
 	text-align: center;
@@ -390,7 +390,7 @@ form{
 	margin-top: 120px;
 	border-radius: 10px;
 	color: #0000;
-	box-shadow: 0 0 45px #0006;
+	box-shadow: 0 0 20px #6D5948;
 	
 }
 
@@ -421,4 +421,77 @@ h2{
 
 .form-registro button[type="submit"] {
 	margin-top: 0.5rem;
+}
+
+.recuperacion {
+  display: flex;
+  flex-direction: column; 
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.recuperacion a{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color:#01ee;
+}
+
+.r_contrasena p{
+	text-align: left;
+}
+
+.r_contrasena, a{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+.acciones{
+	display:flex;
+	flex-direction: column;
+	gap: 20px;
+	
+}
+a{
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	color: #01ee;
+}
+
+.acciones button{
+	width: 120px;
+	margin: auto;
+}
+
+.r_contrasena input.input_linea{
+	border: none;
+	border-bottom: solid 2px #6D5948;
+	border-radius: 1px;
+	color:#45382F;
+}
+
+.r_contrasena{
+	box-shadow: none;
+}
+
+.inicio_sesion button{
+	width: 150px;
+	margin: auto;
+	margin-top: 10px;
+
+}
+
+.contrasena {
+	background:white;
+	margin:auto;
+	padding: 22px;
+	width: 600px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border-top: solid 6px #6D5948;
+	box-shadow: 0 0 8px #6D5948;
 }
