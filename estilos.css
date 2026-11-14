@@ -495,3 +495,13 @@ a{
 	border-top: solid 6px #6D5948;
 	box-shadow: 0 0 8px #6D5948;
 }
+
+.tabla-contenedor table{
+	width: 100%;
+	line-height: 2;
+}
+
+table{
+	width: 100%;
+	line-height: 2;
+}
