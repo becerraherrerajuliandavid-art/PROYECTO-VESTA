@@ -10,6 +10,9 @@
 	--vesta-header: #e8dccb;
 	--vesta-surface: #fffcf7;
 	--vesta-border: #e8dccb;
+	 --servicio-lavanderia: #B5523B;
+    --servicio-spa: #4F8A9B;
+    --servicio-desayuno: #6B8F5E;
 }
 
 *,
@@ -146,7 +149,7 @@ nav a {
 	box-sizing:border-box;
 	padding: 24px;
 	border-radius: 12px;
-	background:white;
+	background:#fffdf7;
 	margin:0;
 }
 
@@ -202,10 +205,13 @@ main {
 	width: 100%;
 	max-width: 480px;
 	margin: 0 auto;
-	background-color: white;
+	background-color:#ffffff;
 	margin-top: 40px;
 	padding: 20px;
 	border-radius: 16px;
+	border: 2px solid #6b6259;
+	box-shadow: 0 0 10px 0 #bfa181;
+
 }
 
 
@@ -234,11 +240,42 @@ main {
 	width: 100%;
 }
 .servicios {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	gap: 1.25rem;
-	margin-top: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	
 }
+
+.card-servicio1{
+	box-sizing: border-box;
+	background: linear-gradient(to bottom,#FFFDF7,#FBEFEA );
+	flex: 1 1 250px;
+	border-radius: 10px;
+	border-top: 4px solid #B5523B;
+	max-width: 400px;
+	padding: 15px;
+}
+
+.card-servicio2{
+	box-sizing: border-box;
+		background: linear-gradient(to bottom,#FFFDF7, #EDF4F6);
+	flex: 1 1 250px;
+	border-radius: 10px;
+	border-top: 4px solid #4F8A9B;
+	max-width: 400px;
+	padding: 15px;
+}
+
+.card-servicio3{
+	box-sizing: border-box;
+	background: linear-gradient(to bottom,#FFFDF7, #F0F5EC);
+	flex: 1 1 250px;
+	border-radius: 10px;
+	border-top: 4px solid #6B8F5E;
+	max-width: 400px;
+	padding: 15px;
+}
+
 .servicios h3 {
 	margin-top: 0;
 }
@@ -804,7 +841,7 @@ table{
 }
 
 .check{
-background: #FFF;
+background: #fffeff;
 	width: 100%;
 	box-sizing: border-box;
 	max-width: 600px;
@@ -812,4 +849,31 @@ background: #FFF;
 	border-radius: 10px;
 	border: 3px solid #e8dccb;
 	flex: 1 1 400px;
+}
+
+.contratar-servicio{
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background:
+        linear-gradient(90deg,
+            var(--servicio-lavanderia),
+            var(--servicio-spa),
+            var(--servicio-desayuno)) top / 100% 4px no-repeat,
+        #FFFDF7;
+}
+
+.form-servicio select:focus,
+.form-servicio input:focus {
+    border-color: var(--servicio-spa);
+    outline: 3px solid rgba(79, 138, 155, 0.3);
+}
+
+.form-servicio button {
+    background: #8C735B;
+    color: #fff;
+}
+
+.form-servicio button:hover {
+    background: #6D5948;
 }
