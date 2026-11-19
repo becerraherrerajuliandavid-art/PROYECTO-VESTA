@@ -1,30 +1,24 @@
 
-// Seleccionar el formulario y la tabla
 const formulario = document.getElementById("formPago");
 const listaPagos = document.getElementById("listaPagos");
 
-// Contador de pagos
 let contadorPagos = 1;
 
-// Registrar un nuevo pago
 formulario.addEventListener("submit", function(evento) {
 
     evento.preventDefault();
 
-    // Obtener los datos del formulario
     const reserva = document.getElementById("reserva").value.trim();
     const huesped = document.getElementById("huesped").value.trim();
     const fechaPago = document.getElementById("fechaPago").value;
     const monto = Number(document.getElementById("monto").value);
     const metodoPago = document.getElementById("metodoPago").value;
 
-    // Validar los campos
     if (!reserva || !huesped || !fechaPago || !monto || !metodoPago) {
         alert("Por favor, complete todos los campos.");
         return;
     }
 
-    // Validar que el número de reserva sea un entero positivo
 if (!Number.isInteger(Number(reserva)) || Number(reserva) <= 0) {
     alert("El número de reserva debe ser un número entero positivo.");
     return;
@@ -51,7 +45,6 @@ if (fechaPago > fechaActual) {
         return;
     }
 
-    // Crear una nueva fila
     const fila = document.createElement("tr");
 
     fila.innerHTML = `
@@ -63,14 +56,12 @@ if (fechaPago > fechaActual) {
         <td>${metodoPago}</td>
     `;
 
-    // Agregar el pago a la tabla
     listaPagos.appendChild(fila);
 
     contadorPagos++;
 
     alert("El pago se registró correctamente.");
 
-    // Limpiar el formulario
     formulario.reset();
 
 });

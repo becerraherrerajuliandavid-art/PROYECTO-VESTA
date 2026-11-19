@@ -90,7 +90,6 @@ tarjetas.forEach((tarjeta) => {
 
         estado.classList.add(clases[estadoEncontrado]);
 
-        // Actualizar los contadores
         actualizarResumen();
 
         alert("El estado de la habitación se actualizó correctamente.");
@@ -98,5 +97,4 @@ tarjetas.forEach((tarjeta) => {
 
 });
 
-// Mostrar los totales al cargar la página
 actualizarResumen();
