@@ -496,10 +496,16 @@ h2{
 	gap: 20px;
 	
 }
-a{
+
+.recuperacion{
 	text-decoration: underline;
 	text-underline-offset: 4px;
 	color: #01ee;
+	margin-top: 15px;
+}
+
+.recuperacion, button{
+	text-decoration: none;
 }
 
 .acciones button{
@@ -522,8 +528,6 @@ a{
 	width: 150px;
 	margin: auto;
 	margin-top: 10px;
-	
-
 }
 
 .contrasena {
@@ -754,4 +758,58 @@ table{
 
 .tabla-pagos tbody tr:hover {
     background-color: #F5EFE6;
+}
+
+.formulario{
+	background-color: #fffe;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 24px;
+	max-width: 800px;
+	margin: auto;
+	border-top: 6px solid #735d49;
+	border-radius: 10px;
+}
+
+.grupo-campo, label{
+	margin-bottom: 20px;
+}
+
+.listado{
+	background: white;
+	border-radius: 8px;
+	border: 2px solid #8c735b;
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+	padding: 20px;
+
+}
+
+.tabla-contenedor{
+	background-color: #E8DCCB;
+	border-radius: 8px;
+	padding-right: 15px; 
+}
+
+.tabla-contenedor, th{
+	padding-top:8px ;
+}
+
+.contenedor-check{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.check{
+background: #FFF;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 600px;
+	padding: 25px;
+	border-radius: 10px;
+	border: 3px solid #e8dccb;
+	flex: 1 1 400px;
 }
