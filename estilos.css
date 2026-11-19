@@ -551,3 +551,207 @@ table{
 	font-weight: 700;
 	color: #000;
 }
+
+
+
+/* ===== MÓDULO HABITACIONES ===== */
+
+.contenedor-habitaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 25px;
+}
+
+.tarjeta-habitacion {
+    background-color: #FFFCF7;
+    border: 1px solid #BFA181;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 8px rgba(69, 56, 47, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-habitacion:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-habitacion h3 {
+    color: #45382F;
+    margin-bottom: 15px;
+}
+
+.tarjeta-habitacion p {
+    color: #6D5948;
+    margin: 10px 0;
+}
+
+.estado {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Estados de las habitaciones */
+
+.disponible {
+    background-color: #DDEBD8;
+    color: #35613B;
+}
+
+.ocupada {
+    background-color: #F3D5D0;
+    color: #913F35;
+}
+
+.reservada {
+    background-color: #F5E6C8;
+    color: #85621F;
+}
+
+.limpieza {
+    background-color: #DCE8F2;
+    color: #365D7A;
+}
+
+.mantenimiento {
+    background-color: #E8DDED;
+    color: #684A78;
+}
+
+.tarjeta-habitacion button {
+    background-color: #8C735B;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.tarjeta-habitacion button:hover {
+    background-color: #6D5948;
+}
+
+
+/* ===== RESUMEN DE HABITACIONES ===== */
+
+.resumen-habitaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+}
+
+.resumen-card {
+    background-color: #FFFCF7;
+    border: 1px solid #BFA181;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(69, 56, 47, 0.10);
+}
+
+.resumen-card h3 {
+    color: #6D5948;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.resumen-card p {
+    color: #45382F;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* ===== MÓDULO PAGOS ===== */
+
+.formulario-pagos,
+.tabla-pagos {
+    background-color: #FFFCF7;
+    border: 1px solid #BFA181;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 3px 8px rgba(69, 56, 47, 0.10);
+}
+
+.formulario-pagos h2,
+.tabla-pagos h2 {
+    color: #45382F;
+    margin-bottom: 20px;
+}
+
+#formPago {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.campo-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-pago label {
+    color: #6D5948;
+    font-weight: bold;
+}
+
+.campo-pago input,
+.campo-pago select {
+    padding: 11px;
+    border: 1px solid #BFA181;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #45382F;
+    font-size: 14px;
+}
+
+#formPago button {
+    background-color: #8C735B;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+#formPago button:hover {
+    background-color: #6D5948;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+.tabla-pagos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-pagos th {
+    background-color: #E8DCCB;
+    color: #45382F;
+    padding: 13px;
+    text-align: left;
+}
+
+.tabla-pagos td {
+    padding: 12px;
+    border-bottom: 1px solid #E8DCCB;
+    color: #6D5948;
+}
+
+.tabla-pagos tbody tr:hover {
+    background-color: #F5EFE6;
+}

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hotel Vesta</h1>
+
+        <nav>
+            <a href="Panel.html">Panel principal</a>
+            <a href="Huespedes.html">Huéspedes</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="Habitaciones.html">Habitaciones</a>
+            <a href="Pagos.html">Pagos</a>
+            <a href="Facturacion.html">Facturación</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de pagos</h2>
+        <p>Registra y consulta los pagos realizados por los huéspedes.</p>
+
+        <section class="resumen-pagos">
+            <!-- Aquí agregaremos los indicadores de pagos -->
+        </section>
+
+        
+<section class="formulario-pagos">
+
+    <h2>Registrar nuevo pago</h2>
+
+    <form id="formPago">
+
+        <div class="campo-pago">
+            <label for="reserva">Número de reserva:</label>
+            <input type="number" id="reserva" required>
+        </div>
+
+        <div class="campo-pago">
+            <label for="huesped">Nombre del huésped:</label>
+            <input type="text" id="huesped" required>
+        </div>
+
+        <div class="campo-pago">
+            <label for="fechaPago">Fecha del pago:</label>
+            <input type="date" id="fechaPago" required>
+        </div>
+
+        <div class="campo-pago">
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" min="1" step="0.01" required>
+        </div>
+
+        <div class="campo-pago">
+            <label for="metodoPago">Método de pago:</label>
+            <select id="metodoPago" required>
+                <option value="">Seleccione un método</option>
+                <option value="Efectivo">Efectivo</option>
+                <option value="Transferencia">Transferencia</option>
+                <option value="Tarjeta débito">Tarjeta débito</option>
+                <option value="Tarjeta crédito">Tarjeta crédito</option>
+            </select>
+        </div>
+
+        <button type="submit">Registrar pago</button>
+
+    </form>
+
+</section>
+
+
+
+<section class="tabla-pagos">
+
+    <h2>Historial de pagos</h2>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>N.º Pago</th>
+                    <th>N.º Reserva</th>
+                    <th>Huésped</th>
+                    <th>Fecha</th>
+                    <th>Monto</th>
+                    <th>Método de pago</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaPagos">
+                
+            </tbody>
+        </table>
+    </div>
+
+</section>
+        
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hotel Vesta - Sistema de gestión hotelera</p>
+    </footer>
+
+    <script src="Pagos.js"></script>
+</body>
+</html>

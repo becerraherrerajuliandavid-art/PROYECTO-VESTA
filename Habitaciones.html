@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones | Hotel Vesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hotel Vesta</h1>
+        <nav>
+            <a href="Panel.html">Panel</a>
+            <a href="Huespedes.html">Huéspedes</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="Habitaciones.html">Habitaciones</a>
+            <a href="Checkin-checkout.html">Check in / Check out</a>
+            <a href="Facturacion.html">Facturación</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de habitaciones</h2>
+        <div class="resumen-habitaciones">
+
+    <div class="resumen-card">
+        <h3>Disponibles</h3>
+        <p id="totalDisponibles">0</p>
+    </div>
+
+    <div class="resumen-card">
+        <h3>Ocupadas</h3>
+        <p id="totalOcupadas">0</p>
+    </div>
+
+    <div class="resumen-card">
+        <h3>Reservadas</h3>
+        <p id="totalReservadas">0</p>
+    </div>
+
+    <div class="resumen-card">
+        <h3>En limpieza</h3>
+        <p id="totalLimpieza">0</p>
+    </div>
+
+    <div class="resumen-card">
+        <h3>Mantenimiento</h3>
+        <p id="totalMantenimiento">0</p>
+    </div>
+
+</div>
+        <p>Consulta el estado y la disponibilidad de las habitaciones del hotel.</p>
+
+        <section class="contenedor-habitaciones" id="listaHabitaciones">
+
+            
+<article class="tarjeta-habitacion">
+    <h3>Habitación 101</h3>
+    <p>Tipo: Sencilla</p>
+    <p>Capacidad: 1 persona</p>
+    <p>Estado: <span class="estado disponible">Disponible</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+<article class="tarjeta-habitacion">
+    <h3>Habitación 102</h3>
+    <p>Tipo: Doble</p>
+    <p>Capacidad: 2 personas</p>
+    <p>Estado: <span class="estado ocupada">Ocupada</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+<article class="tarjeta-habitacion">
+    <h3>Habitación 103</h3>
+    <p>Tipo: Familiar</p>
+    <p>Capacidad: 4 personas</p>
+    <p>Estado: <span class="estado reservada">Reservada</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+<article class="tarjeta-habitacion">
+    <h3>Habitación 104</h3>
+    <p>Tipo: Sencilla</p>
+    <p>Capacidad: 1 persona</p>
+    <p>Estado: <span class="estado limpieza">En limpieza</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+<article class="tarjeta-habitacion">
+    <h3>Habitación 105</h3>
+    <p>Tipo: Doble</p>
+    <p>Capacidad: 2 personas</p>
+    <p>Estado: <span class="estado mantenimiento">Mantenimiento</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+<article class="tarjeta-habitacion">
+    <h3>Habitación 106</h3>
+    <p>Tipo: Familiar</p>
+    <p>Capacidad: 4 personas</p>
+    <p>Estado: <span class="estado disponible">Disponible</span></p>
+    <button>Cambiar estado</button>
+</article>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Hotel Vesta - Sistema de gestión hotelera</p>
+    </footer>
+<script src="Habitaciones.js"></script>
+</body>
+</html>

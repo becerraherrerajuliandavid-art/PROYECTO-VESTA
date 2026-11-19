@@ -42,28 +42,43 @@
         <section class="formulario">
             <h3>Registrar nuevo huésped</h3>
 
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"
-                       placeholder="Ingresa el nombre" required>
+            <form id="formHuesped">
+                
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre"
+       placeholder="Ingresa el nombre"
+       minlength="2" maxlength="50"
+       title="El nombre solo debe contener letras."
+       required>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido"
-                       placeholder="Ingresa el apellido" required>
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido" name="apellido"
+       placeholder="Ingresa el apellido"
+       minlength="2" maxlength="50"
+       title="El apellido solo debe contener letras."
+       required>
 
-                <label for="documento">Documento de identidad:</label>
-                <input type="text" id="documento" name="documento"
-                       placeholder="Número de documento" required>
+<label for="documento">Documento de identidad:</label>
+<input type="text" id="documento" name="documento"
+       placeholder="Número de documento"
+       minlength="5" maxlength="15"
+       inputmode="numeric"
+       required>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono"
-                       placeholder="Número de teléfono">
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono"
+       placeholder="Número de teléfono"
+       minlength="7" maxlength="10"
+       inputmode="numeric"
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo"
-                       placeholder="ejemplo@correo.com">
+<label for="correo">Correo electrónico:</label>
+<input type="text" id="correo" name="correo"
+       placeholder="ejemplo@correo.com"
+       maxlength="100">
+       
+<button type="submit">Registrar huésped</button>
 
-                <button type="submit">Registrar huésped</button>
+
             </form>
         </section>
 
@@ -84,7 +99,7 @@
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody id="listaHuespedes">
                 <tr>
                     <td>María</td>
                     <td>González</td>
@@ -98,13 +113,12 @@
 </section>
 
 
-        <a class="volver" href="panel.html">Volver al panel principal</a>
-
+    
     </main>
 
     <footer class="pie">
         <p>PMS Vesta | Sistema de gestión hotelera</p>
     </footer>
-
+<script src="huespedes.js"></script>
 </body>
 </html>
